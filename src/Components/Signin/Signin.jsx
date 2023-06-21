@@ -47,7 +47,8 @@ const Signin = () => {
         setTimeout(() => {
           navigate("/");
         }, 2000);
-
+        window.location.reload(false);
+        setErrorMessage('');
     } catch (error) {
         console.log(error.message);
         setErrorMessage('Email/Password is wrong.');
