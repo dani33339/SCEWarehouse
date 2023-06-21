@@ -1,4 +1,5 @@
 SCEWarehouse
+
 SCEWarehouse is a website designed to function as a warehouse for a college. It provides various features such as registration and login, item management (addition and editing), order confirmation, search functionality, and order items. The project also incorporates measures to prevent XSS attacks and web shells. Development involved the use of Jira and Jenkins for project management, metric tracking, and a comprehensive testing process comprising unit and automation tests.
 
 Technologies Used:
