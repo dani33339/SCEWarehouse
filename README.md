@@ -20,7 +20,8 @@ To run the project, follow these steps:
 
 Install all dependencies.
 Type the following command: npm start
-Website Demo
+
+Website Demo:
 You can access a live demo of the website at https://dapper-pixie-3d9939.netlify.app
 
 Video Demo
