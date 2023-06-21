@@ -42,29 +42,29 @@ function App() {
       
       <div className = 'content'>
         <Routes>
-          <Route element={<ProtectedRoute user={Logedin} />}>
+          {/* <Route element={<ProtectedRoute user={Logedin} />}> */}
             <Route path="/" element={<Home />} />     
-          </Route>
-        <Route element={<SignProtected user={Logedin} />}>
+          {/* </Route> */}
+        {/* <Route element={<SignProtected user={Logedin} />}> */}
          <Route path="/Sign-up" element={<Signup />} />     
-        </Route>
-        <Route element={<SignProtected user={Logedin} />}>
+        {/* </Route> */}
+        {/* <Route element={<SignProtected user={Logedin} />}> */}
           <Route path="/Sign-in" element={<Signin />} />     
-        </Route>
+        {/* </Route> */}
      
 
-          <Route element={<ProtectedRoute user={Logedin} />}>
+          {/* <Route element={<ProtectedRoute user={Logedin} />}> */}
             <Route path="Order" element={<Order />} />    
-          </Route>
+          {/* </Route> */}
           
-          <Route element={<ProtectedRoute user={Logedin} />}>
+          {/* <Route element={<ProtectedRoute user={Logedin} />}> */}
             <Route path="Myorders" element={<Myorders />} />  
-          </Route>
+          {/* </Route> */}
 
-        <Route element={<ProtectedRoute user={adminState} />}>
+        {/* <Route element={<ProtectedRoute user={adminState} />}> */}
           <Route path="Admin" element={<Admin />} />
           <Route path="Confirmation" element={<Confirmation />} />
-        </Route>
+        {/* </Route> */}
         <Route path="*" element={<ProtectedRoute user={Logedin}/>}/>
         </Routes>
         
