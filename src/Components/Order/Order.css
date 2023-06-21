@@ -1,0 +1,157 @@
+
+:root {
+  --PrimaryColor: hsl(115, 100%, 33%);
+  --SecondaryColor: hsl(159, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(143, 85%, 43%),hsl(137, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: #31302a(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+:root .main {
+  width: 200%;
+}
+:root .main .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  width: 30%;
+  height: var(--headerHeight);
+  z-index: 1000;
+  padding: 2rem;
+}
+:root .main .header .closetems {
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  color: var(--PrimaryColor);
+}
+:root .main .header .closetems:hover .icon {
+  color: var(--SecondaryColor);
+}
+:root .main .header .TermsBar {
+  background: var(--whiteColor);
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 140%;
+  border-radius: 4rem;
+  padding: 2rem;
+  top: -3000%;
+  left: 70%;
+  transform: translate(-50%);
+  z-index: 2000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+  transition: 0.3s ease-in-out;
+}
+:root .main .header .TermsBar .closeTermsbar {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  color: var(--PrimaryColor);
+}
+:root .main .header .TermsBar .closeTermsbar:hover .icon {
+  color: var(--SecondaryColor);
+}
+:root .main .header .activeTermsbar {
+  top: -30rem;
+}
+:root .main .checkbox-container {
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+:root .main .checkbox-container label {
+  position: relative;
+}
+:root .main .checkbox-container label input[type=checkbox] {
+  margin-right: 10px;
+}
+:root .main .checkbox-container label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+:root .main .checkbox-container p {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+:root .main .card-form {
+  display: block;
+  width: 450px;
+  margin: 1rem;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 25px 30px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+:root .main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+:root .main .secContent .imageDiv {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+:root .main .secContent .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+:root .main .secContent .imageDiv:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+.btn2{
+  padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+}
+/*# sourceMappingURL=Order.css.map */

@@ -1,0 +1,264 @@
+:root {
+  --PrimaryColor: hsl(115, 100%, 33%);
+  --SecondaryColor: hsl(159, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(143, 85%, 43%),hsl(137, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: #31302a(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+:root .main {
+  width: 100%;
+}
+:root .main input[type=file] {
+  cursor: pointer !important;
+}
+:root .main .Roudtrip {
+  font-size: 15px;
+}
+:root .main .One_way {
+  font-size: 15px;
+  padding: 1rem;
+}
+:root .main .input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+:root .main .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+}
+:root .main .input input::-moz-placeholder {
+  font-size: 16px;
+}
+:root .main .input input::placeholder {
+  font-size: 16px;
+}
+:root .main .input .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+:root .main .input input[type=range] {
+  background: blue;
+}
+:root .main .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  width: 30%;
+  height: var(--headerHeight);
+  z-index: 1000;
+  padding: 2rem;
+}
+:root .main .header .addBar {
+  background: var(--whiteColor);
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  top: -3000%;
+  left: 150%;
+  transform: translate(-50%);
+  z-index: 2000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+  transition: 0.3s ease-in-out;
+}
+:root .main .header .addBar .addLists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  padding: 0.5rem 0;
+}
+:root .main .header .addBar .addLists .addItem {
+  padding: 0.5rem 0;
+}
+:root .main .header .addBar .addLists .btn {
+  margin-top: 1rem;
+}
+:root .main .header .addBar .addLists .btn a {
+  font-weight: 600;
+  color: var(--whiteColor);
+}
+:root .main .header .addBar .closeaddbar {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--PrimaryColor);
+}
+:root .main .header .addBar .closeaddbar:hover .icon {
+  color: var(--SecondaryColor);
+}
+:root .main .header .activeaddbar {
+  top: -10rem;
+}
+:root .main .btn {
+  margin-top: 5rem;
+  color: var(--whiteColor);
+  font-weight: 1000;
+  font-size: medium;
+  margin: 5px;
+}
+:root .main .btn .icon {
+  align-self: center;
+  font-size: 25px;
+}
+:root .main .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 2rem 0;
+  z-index: 2;
+}
+:root .main .secTitle .title::after {
+  position: absolute;
+  content: "";
+  background: var(--SecondaryColor);
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+:root .main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+:root .main .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+:root .main .secContent .singleDestination:hover {
+  background: var(--cardHover);
+  box-shadow: 1px 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+:root .main .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+:root .main .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+:root .main .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+:root .main .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+:root .main .secContent .singleDestination .cardInfo .destTitle {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+:root .main .secContent .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+:root .main .secContent .singleDestination .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 18px;
+}
+:root .main .secContent .singleDestination .cardInfo .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+:root .main .secContent .singleDestination .cardInfo .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--greyText);
+  border-bottom: 1.5px solid var(--greyText);
+}
+:root .main .secContent .singleDestination .cardInfo .fees .grade {
+  color: var(--blackColor);
+  font-weight: 500;
+  font-size: large;
+  max-width: 500px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+:root .main .secContent .singleDestination .cardInfo .fees .grade .textD {
+  font-weight: 1000;
+  color: var(--PrimaryColor);
+  font-size: 18px;
+}
+:root .main .secContent .singleDestination .cardInfo .price {
+  font-size: 40px;
+  color: var(--blackColor);
+}
+:root .main .secContent .singleDestination .cardInfo .desc {
+  font-size: 20.5px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+:root .main .secContent .singleDestination .cardInfo .btn {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5px;
+  display: inline-block;
+  margin: 5px;
+}
+:root .main .secContent .singleDestination .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=Myorders.css.map */

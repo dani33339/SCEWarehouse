@@ -1,0 +1,319 @@
+:root {
+  --PrimaryColor: hsl(115, 100%, 33%);
+  --SecondaryColor: hsl(159, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(143, 85%, 43%),hsl(137, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: #31302a(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.Sign-up {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.Sign-up .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(77, 92, 98);
+  mix-blend-mode: hard-light;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.Sign-up video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Sign-up .Sign-upContent {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 8rem 1.5rem 3rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+.Sign-up .Sign-upContent .textDiv {
+  padding: 2rem e0;
+}
+.Sign-up .Sign-upContent .textDiv .smallText {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.Sign-up .Sign-upContent .textDiv .Sign-upTitle {
+  position: relative;
+  font-size: 1.8rem;
+}
+.Sign-up .Sign-upContent .cardDiv {
+  display: block;
+  position: flex;
+  flex-direction: row;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  gap: 1rem;
+}
+.Sign-up .Sign-upContent .cardDiv label {
+  display: block;
+  color: var(--textColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.Sign-up .Sign-upContent .cardDiv price range .label_total {
+  justify-content: space-between;
+  align-items: center;
+}
+.Sign-up .Sign-upContent .cardDiv price range .label_total .total {
+  color: var(--textColor);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.Sign-up .Sign-upContent .cardDiv .input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+.Sign-up .Sign-upContent .cardDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.Sign-up .Sign-upContent .cardDiv .input input::-moz-placeholder {
+  font-size: 13px;
+}
+.Sign-up .Sign-upContent .cardDiv .input input::placeholder {
+  font-size: 13px;
+}
+.Sign-up .Sign-upContent .cardDiv .input .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+.Sign-up .Sign-upContent .cardDiv .input input[type=range] {
+  background: blue;
+}
+.Sign-up .Sign-upContent .cardDiv .submit {
+  position: absolute;
+  background: var(--gradientColor);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.7rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+}
+.Sign-up .Sign-upContent .cardDiv .submit:hover {
+  background: var(--PrimaryColor);
+}
+.Sign-up .Sign-upContent .cardDiv .submit .icon {
+  font-size: 18px;
+}
+.Sign-up .Sign-upContent .cardDiv .submit span {
+  font-size: 13px;
+}
+.Sign-up .Sign-upContent .homeFooterIcons {
+  width: 100%;
+  justify-content: space-between;
+}
+.Sign-up .Sign-upContent .homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.Sign-up .Sign-upContent .homeFooterIcons .icon:hover {
+  color: var(--PrimaryColor);
+}
+.Sign-up .Sign-upContent .cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  gap: 1rem;
+}
+.Sign-up .Sign-upContent .cardDiv Label {
+  display: block;
+  color: hsl(240, 4%, 36%);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.Sign-up .Sign-upContent .cardDiv .label_total {
+  justify-content: space-between;
+  align-items: center;
+}
+.Sign-up .Sign-upContent .cardDiv .label_total .total {
+  color: var(--textColor);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.Sign-up .Sign-upContent .cardDiv .input {
+  height: 40px;
+  padding: 0 1rem;
+  background: var(--inputColor);
+  border-radius: 3rem;
+}
+.Sign-up .Sign-upContent .cardDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.Sign-up .Sign-upContent .cardDiv .input input::-moz-placeholder {
+  font-size: 13px;
+}
+.Sign-up .Sign-upContent .cardDiv .input input::placeholder {
+  font-size: 13px;
+}
+.Sign-up .Sign-upContent .cardDiv .input .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+.Sign-up .Sign-upContent .cardDiv .input .input[type=range] {
+  background: blue;
+}
+.Sign-up .Sign-upContent .cardDiv .submit {
+  position: absolute;
+  background: var(--gradientColor);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.7rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+.Sign-up .Sign-upContent .cardDiv .submithover {
+  background: var(--PrimaryColor);
+}
+.Sign-up .Sign-upContent .cardDiv .submit .icon {
+  font-size: 18px;
+}
+.Sign-up .Sign-upContent .cardDiv .submit span {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 500px) {
+  .Sign-up .Sign-upContent .textDiv .smallText {
+    font-size: 16px;
+  }
+  .Sign-up .Sign-upContent .textDiv .Sign-upTitle {
+    position: relative;
+    font-size: 2.3rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .Sign-up .Sign-upContent .textDiv .Sign-upTitle::after {
+    position: absolute;
+    content: "";
+    background: var(--SecondaryColor);
+    height: 5px;
+    width: 145px;
+    right: 0px;
+    bottom: 5px;
+    z-index: -1;
+  }
+  .Sign-up .Sign-upContent .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 660px) {
+  .Sign-up .Sign-upContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .Sign-up {
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Sign-up {
+    height: 80vh;
+  }
+  .Sign-up .Sign-upContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Sign-up .Sign-upContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 95vh;
+  }
+  .home .homeContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .homeContent .cardDiv {
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home .homeContent .cardDiv .input {
+    margin-bottom: 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions span {
+    font-size: 17px;
+  }
+
+  .error-notification {
+    position: fixed;
+    top: 270px;
+    left: 9%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+  
+  .error-bubble {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}/*# sourceMappingURL=Signup.css.map */

@@ -1,0 +1,83 @@
+{
+  "name": "warehouse",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
+    "@firebase/rules-unit-testing": "^2.0.7",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react-router-dom": "^5.3.3",
+    "aos": "^2.3.4",
+    "chromedriver": "^112.0.1",
+    "dompurify": "^3.0.3",
+    "emailjs-com": "^3.2.0",
+    "enzyme": "^3.11.0",
+    "es6-promise": "^4.2.8",
+    "file-type": "^18.4.0",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.7.0",
+    "firebase-functions": "^4.3.1",
+    "helmet": "^7.0.0",
+    "icons": "^1.0.0",
+    "Jest": "npm:jest@^27.5.1",
+    "mui": "^0.0.1",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.12.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
+    "selenium-webdriver": "^4.9.0",
+    "uid": "^2.0.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "cypress": "^12.13.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
+    "eslint": "^8.41.0",
+    "eslint-plugin-complexity": "^1.0.2",
+    "eslint-plugin-react": "^7.32.2",
+    "jest": "^27.5.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/index.js",
+      "!src/Components/Order/Order.jsx",
+      "!src/Components/Main/Main.jsx",
+      "!src/Components/Confirmation/Confirmation.jsx",
+      "!src/Components/Admin/Admin.jsx",
+      "!src/Components/Myorders/Myorders.jsx",
+      "!src/App.js",
+      "!src/Components/Signin/Signin.jsx"
+    ]
+  }
+}

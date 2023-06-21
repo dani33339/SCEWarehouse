@@ -1,0 +1,46 @@
+.teach{
+    color: red;
+    font-size: x-large;
+    
+}
+.imgX {
+    width: 400px; 
+    height: 100px; 
+    object-fit: cover; 
+  }
+
+
+  .orange {
+    padding: .6rem 1.5rem;
+    background:orange;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-top: 5rem;
+        color: var(--whiteColor);
+        font-weight: 1000;
+        font-size: medium;
+        margin: 5px;
+        
+
+  }
+  
+  .red {
+    
+        padding: .6rem 1.5rem;
+        background:red;
+        border: none;
+        outline: none;
+        border-radius: 3rem;
+        cursor: pointer;
+        margin-top: 5rem;
+        color: var(--whiteColor);
+        font-weight: 1000;
+        font-size: medium;
+        margin: 5px;
+        
+    
+  }
+  
+/*# sourceMappingURL=Confirmation.css.map */
