@@ -21,7 +21,7 @@ To run the project, follow these steps:
 Install all dependencies.
 Type the following command: npm start
 Website Demo
-You can access a live demo of the website at https://dapper-pixie-3d9939.netlify.app/Sign-in.
+You can access a live demo of the website at https://dapper-pixie-3d9939.netlify.app
 
 Video Demo
 Watch a video showcasing the main options of the SCEWarehouse website:
