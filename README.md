@@ -28,17 +28,13 @@ Testing with Cypress and Jest
 Firebase was employed for authentication during registration and login processes.
 Firestore database was used as the primary database, and Firebase Storage facilitated image storage.
 
-Getting Started
-To run the project, follow these steps:
-
-Install all dependencies.
-Type the following command: npm start
-
 Website Demo:
+
 You can access a live demo of the website at https://dapper-pixie-3d9939.netlify.app
 Please note that for the demo to function properly and allow free usage, I have disabled page protection. This means you can freely navigate through the website and explore its features without any restrictions. 
 
-Video Demo
+Video Demo:
+
 Watch a video showcasing the main options of the SCEWarehouse website:
 https://www.youtube.com/watch?v=Cljuy-mr7Rw
 https://github.com/dani33339/SCEWarehouse/assets/93151766/b3593116-f698-4d1f-b36e-461124d78e2c
